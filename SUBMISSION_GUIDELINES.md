@@ -1,131 +1,58 @@
 
 # Submission Guidelines — Securing AI
 
-## Overview
-
-The Securing AI course uses instructor-reviewed assignments to evaluate student understanding and practical application of AI security concepts.
-
-Students are expected to complete the activities in their assigned student notebooks and submit their work for review.
-
----
-
 ## What to Submit
 
-For each module, submit your completed Google Colab notebook as an `.ipynb` file.
+Submit **your completed personal copy** of the assigned student notebook as an `.ipynb` file. The instructor reviews your code, outputs, written explanations, and required lab activities.
 
-Your submission should include:
+**Do not submit or edit the original course notebook.**
 
-- Completed coding activities.
-- Required experimental outputs.
-- Written responses and analysis.
-- Observations from attack and defense experiments.
-- Completed end-of-module assessments.
+## Create Your Working Copy First
 
-Unless otherwise directed, submit one completed notebook for each module.
+On your assigned cyber range machine:
 
----
+1. Use the **desktop course shortcut** to open the workspace in VS Code.
+2. Locate `ModuleX_Student.ipynb` in the assigned module folder.
+3. Copy it into your **instructor-designated personal working folder**.
+4. Rename it to `ModuleX_Student_FirstName_LastName.ipynb`.
+5. Open and complete the renamed copy.
 
-## Recommended File Naming
+Example: `Module3_Student_Jane_Doe.ipynb`.
 
-Use the following naming convention:
+## Save Your Work
 
-`ModuleX_Student_FirstName_LastName.ipynb`
+- Use **File → Save** or **Ctrl+S** in VS Code regularly.
+- Confirm you are saving the personal copy, not the original.
+- Preserve requested outputs, code, and written answers.
+- Follow instructor guidance about persistent storage and backups in the cyber range.
 
-Examples:
+## Before Submitting
 
-`Module1_Student_Jane_Doe.ipynb`
+- [ ] I worked in my own copy of the student notebook.
+- [ ] My name and module number are in the filename.
+- [ ] All required coding tasks are complete.
+- [ ] Required code cells have been executed.
+- [ ] Relevant outputs are visible or documented.
+- [ ] Written-response questions are answered.
+- [ ] The end-of-module assessment is complete.
+- [ ] I saved the latest version of the `.ipynb` file.
 
-`Module2_Student_Jane_Doe.ipynb`
+## How to Submit
 
-`Module3_Student_Jane_Doe.ipynb`
+1. Locate the completed `.ipynb` file in your personal work folder.
+2. Submit it using the **method designated by your instructor**.
+3. Follow any additional deadline or naming instructions provided by the instructor.
+4. Retain your working copy until your submission has been graded.
 
-Replace `X` with the module number.
+**Do not submit work through public GitHub issues, commits, or pull requests.**
 
----
+## Grading
 
-## Saving Your Work
-
-In Google Colab:
-
-1. Open your personal copy of the notebook.
-2. Confirm that your changes have been saved.
-3. Select **File → Download → Download .ipynb**.
-4. Save the downloaded file.
-5. Verify that the correct file was downloaded.
-
-Keep a personal backup of each completed module.
-
----
-
-## Submission Checklist
-
-Before submitting, verify the following:
-
-- [ ] I completed all required tasks.
-- [ ] I answered the written questions.
-- [ ] My code executes without unexpected errors.
-- [ ] My experimental results are visible or documented.
-- [ ] I explained the results where requested.
-- [ ] I completed the end-of-module assessment.
-- [ ] I saved the latest version of my notebook.
-- [ ] My filename identifies the module and student.
-- [ ] I am submitting the correct `.ipynb` file.
-
----
-
-## How Assignments Are Evaluated
-
-Instructors review student submissions using the corresponding instructor notebook and grading guidance.
-
-Evaluation may consider:
-
-1. Correct implementation of required tasks.
-2. Successful execution of experiments.
-3. Accuracy of technical explanations.
-4. Interpretation of results.
-5. Understanding of security concepts.
-6. Quality and completeness of written responses.
-7. Completion of the practical assessment.
-
-Point values and deadlines are determined by the instructor.
-
----
-
-## Submission Location
-
-**Follow the submission instructions provided by your course instructor.**
-
-Your instructor will identify the approved submission platform and any applicable deadlines.
-
-Do not submit completed notebooks through public GitHub issues, pull requests, or repository commits.
-
----
-
-## Academic Integrity
-
-Students are expected to submit their own work.
-
-You may consult the provided instructional materials and authorized references.
-
-Clearly identify outside resources when required by the instructor.
-
-Do not copy another student's completed assignment or share completed solutions without permission.
-
----
+Instructors evaluate student submissions using separate instructor materials. Grading may consider task completion, technical correctness, results, written analysis, and the final practical assessment. Exact point values are set by the instructor.
 
 ## Technical Problems
 
-If a notebook cannot be completed because of an error:
+If you cannot finish because of a cyber range or VS Code issue, record the module, task, error, and steps attempted. Consult the **Getting Started HTML guide on your desktop**, then [Troubleshooting](TROUBLESHOOTING.md), and contact the instructor.
 
-1. Record the error message.
-2. Document the steps that produced the error.
-3. Review the troubleshooting instructions.
-4. Contact your instructor if necessary.
-
-Do not delete incomplete work or error information when it is relevant to an unresolved technical issue.
-
----
-
-[Return to Course Home](README.md) |
-[Getting Started](GETTING_STARTED.md)
+[Course Home](README.md) | [Getting Started](GETTING_STARTED.md)
 
