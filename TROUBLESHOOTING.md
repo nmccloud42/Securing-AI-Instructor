@@ -1,182 +1,70 @@
 
+# Troubleshooting — Cyber Range and VS Code
 
-# Troubleshooting — Securing AI
+These instructions apply to the **assigned cyber range machine**, not to a personal Google Colab environment.
 
-This guide addresses common problems encountered while using Google Colab and completing the Securing AI notebooks.
+## 1. I Don't Know Where to Start
 
----
+Open the **Getting Started HTML guide on your cyber range desktop**. Then double-click the **course shortcut** to launch VS Code.
 
-## 1. A Code Cell Will Not Run
+## 2. The Course Shortcut Does Not Open VS Code
 
-Possible causes:
+- Wait briefly for the cyber range desktop to finish loading.
+- Try the course shortcut once more.
+- Check whether VS Code opened behind another window.
+- If the shortcut is missing or broken, contact the instructor or cyber range administrator. Do not attempt to reinstall or reconfigure the environment without authorization.
 
-- The runtime is disconnected.
-- A previous setup cell was not executed.
-- A required variable has not been defined.
-- A Python package is missing.
-- The cell contains an incomplete student task.
+## 3. I Cannot Find a Module
 
-### Recommended Steps
+In VS Code, open the **Explorer** panel (View → Explorer) and look for the module folders. If the course workspace is not visible, reopen it using the desktop shortcut. Contact the instructor if files are missing.
 
-1. Confirm that the runtime is connected.
-2. Run the notebook's setup and import cells.
-3. Read the error message carefully.
-4. Check that all required variables exist.
-5. Verify that the task has been completed.
+## 4. I Cannot Make a Copy
 
-If necessary, select **Runtime → Restart session** and execute the required cells again.
+Right-click the `.ipynb` file in VS Code Explorer and choose **Copy**. Paste it into your instructor-designated personal work folder and rename it. If the folder is unavailable or read-only, ask your instructor where personal work should be stored. **Do not modify the shared original.**
 
----
+## 5. The Notebook Will Not Run
 
-## 2. NameError: Variable Is Not Defined
+- Verify that you opened **your copied `.ipynb` file**.
+- Confirm the notebook is using the course-provided Python kernel/environment.
+- Run prerequisite setup cells before later cells.
+- Read the full error message.
+- If the course kernel is missing, contact your instructor rather than installing a new environment yourself.
 
-A `NameError` often means that a variable has not been created in the current session.
+## 6. Python Kernel Is Not Available
 
-### Solution
+Use **Select Kernel** in the notebook toolbar and choose the environment provided for the course. If no suitable kernel appears, notify the instructor or cyber range administrator.
 
-Run the earlier cell that defines the variable.
+## 7. `NameError` or Missing Variable
 
-Check for spelling mistakes and differences in capitalization.
+An earlier cell may not have run, or a variable may be misspelled. Run required earlier cells in order and check variable names.
 
-Do not rename variables used by later cells unless the instructions require it.
+## 8. `ModuleNotFoundError` or Missing Package
 
----
+The cyber range should contain the course's required tools. Check whether the notebook includes a setup step. If the package is still unavailable, contact your instructor. Do not install arbitrary packages or change system configuration without authorization.
 
-## 3. ModuleNotFoundError
+## 9. Code Runs Slowly or Freezes
 
-This error indicates that Python cannot find a required library.
+Some model experiments take time. Check the cell's status and avoid starting duplicate runs. If the environment becomes unresponsive, note the task and contact the instructor before restarting or changing system settings.
 
-### Solution
+## 10. My Results Differ from an Example
 
-Run any installation or setup cells provided in the notebook.
+Random seeds, dataset splits, model settings, and package versions can affect outputs. Verify the requested parameters and explain your observed results instead of replacing them with expected values.
 
-If the notebook requires a package that is not installed, review the module instructions before installing it.
+## 11. I Lost My Work or the Cyber Range Session Ended
 
-Avoid changing package versions unless instructed.
+Check your designated personal working folder and any approved backup location. The persistence of files between sessions depends on the cyber range configuration; ask your instructor if unsure. Do not assume that desktop or temporary files will be retained.
 
----
+## 12. I Accidentally Edited the Original Notebook
 
-## 4. The Notebook Is Taking Too Long
+Stop editing the original. Save any needed work to an approved personal copy, then inform the instructor if the original course file may have changed. Do not overwrite shared materials.
 
-Some machine learning experiments require additional processing time.
+## 13. I Cannot Submit My Notebook
 
-### Solution
+Confirm that your file is saved as `.ipynb`, uses the required naming convention, and is in your personal folder. Ask the instructor for the approved submission location or transfer method. **Do not post submissions publicly on GitHub.**
 
-- Wait for the current cell to finish.
-- Avoid running the same cell repeatedly.
-- Check whether the runtime is still connected.
-- Review the activity instructions for expected runtime behavior.
+## When Requesting Help
 
-If an experiment appears stuck, record the cell and contact your instructor before changing the required experiment.
+Provide your module number, task, error message, and steps attempted. Never share passwords, tokens, or private credentials.
 
----
+[Getting Started](GETTING_STARTED.md) | [Submission Guidelines](SUBMISSION_GUIDELINES.md) | [Course Home](README.md)
 
-## 5. My Results Are Different from the Example
-
-Machine learning experiments may produce different results because of:
-
-- Random initialization.
-- Dataset splitting.
-- Model training behavior.
-- Software versions.
-- Parameter changes.
-
-### Solution
-
-Check the random seed and experiment parameters.
-
-Confirm that you followed the instructions.
-
-When asked to analyze results, explain the values you actually observed rather than replacing them with expected values.
-
----
-
-## 6. My Runtime Disconnected
-
-Google Colab runtimes may disconnect after inactivity or because of resource limitations.
-
-### Solution
-
-1. Reconnect to the runtime.
-2. Run the setup cells.
-3. Restore any required data or files.
-4. Execute the necessary experiment cells again.
-
-Variables stored only in runtime memory may be lost after a reset.
-
----
-
-## 7. I Cannot Edit the Notebook
-
-You may have opened the original notebook directly from GitHub.
-
-### Solution
-
-Select:
-
-**File → Save a copy in Drive**
-
-Edit the personal copy instead of the repository version.
-
----
-
-## 8. I Cannot Find My Notebook
-
-Open Google Drive and look for the notebook in your Colab notebooks folder or use Drive search.
-
-If you downloaded a copy, check your computer's Downloads folder.
-
----
-
-## 9. I Cannot Open the Notebook from GitHub
-
-Try the following:
-
-1. Open the module folder in GitHub.
-2. Select the `.ipynb` file.
-3. Download the notebook.
-4. Visit https://colab.research.google.com/
-5. Select **File → Upload notebook**.
-6. Upload the downloaded `.ipynb` file.
-
----
-
-## 10. I Accidentally Changed Important Code
-
-If you have a saved copy, use it to restore the affected code.
-
-You may also download a fresh copy of the student notebook from GitHub and compare the original instructions with your work.
-
-Do not replace your entire completed assignment unless necessary.
-
----
-
-## 11. My Notebook Contains an Error During Submission
-
-If your notebook contains an unresolved error:
-
-- Record the error message.
-- Explain what you attempted.
-- Preserve your completed work.
-- Contact your instructor for guidance.
-
-An unresolved error does not automatically mean that every part of the assignment is incorrect.
-
----
-
-## 12. I Need Additional Assistance
-
-When requesting help, provide:
-
-- The module number.
-- The task or section number.
-- The error message.
-- The steps you attempted.
-- A description of the expected behavior.
-
-Do not share passwords, API keys, access tokens, or other sensitive credentials.
-
----
-
-[Return to Course Home](README.md) |
-[Getting Started](GETTING_STARTED.md)
