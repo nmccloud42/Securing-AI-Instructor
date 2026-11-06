@@ -1,193 +1,110 @@
 
-# Getting Started — Securing AI
+# Getting Started — Cyber Range and VS Code
 
-Welcome to the Securing AI course.
+This course runs on a **designated cyber range machine** prepared for you. The course materials and VS Code environment are intended to be available from that machine; you do **not** need to download or configure the entire course on your personal computer.
 
-This guide explains how to access the learning materials, work in Google Colab, complete assignments, and submit your work.
+## Step 1 — Access Your Cyber Range Machine
 
-Follow the steps below before starting Module 1.
+Follow the instructor's directions to connect to your assigned machine. Wait until the desktop is fully loaded.
 
----
+Each student has a designated workspace. Work only in the environment assigned to you.
 
-## Step 1 — Understand the Course
+## Step 2 — Find the Desktop Shortcuts
 
-Securing AI contains seven modules that progress from foundational AI security concepts to hands-on attack simulations, defensive controls, and incident response.
+Your cyber range desktop includes:
 
-Each module contains:
+- **Course shortcut:** Opens the course workspace in **Visual Studio Code (VS Code)**.
+- **Getting Started HTML guide:** Opens a quick-reference page with instructions for beginning or resuming the course.
 
-- Instructional readings.
-- Python demonstrations.
-- Student coding activities.
-- Written-response questions.
-- Practical security exercises.
-- End-of-module assessments.
+If you are unsure where to begin, open the **Getting Started HTML guide** first.
 
-Students should complete the modules in numerical order.
+## Step 3 — Open the Course in VS Code
 
-[View the Course Roadmap](COURSE_ROADMAP.md)
+1. Double-click the **course shortcut** on your cyber range desktop.
+2. Wait for VS Code to open the course workspace.
+3. In the **Explorer** panel (left side), locate the folder for your assigned module.
+4. Open that module's `ModuleX_Student.ipynb` notebook.
+5. Read the module's `README.md` for its objectives and instructions.
 
----
+If the Explorer panel is hidden, use **View → Explorer** or the Explorer icon in VS Code.
 
-## Step 2 — Open Module 1
+## Step 4 — Make Your Own Working Copy (Required)
 
-1. Return to the [main course page](README.md).
-2. Locate the Course Modules table.
-3. Select **Module 1 — Introduction to AI Security**.
-4. Read the Module 1 instructions.
-5. Open the student notebook in Google Colab.
+**Do not begin editing the original student notebook.**
 
-[Go to Module 1](Module_1_Introduction/README.md)
+Before starting a module:
 
----
+1. In VS Code's Explorer, find the module's `ModuleX_Student.ipynb` file.
+2. Right-click it and choose **Copy**.
+3. Open your personal working folder (use the location designated by your instructor), right-click, and choose **Paste**.
+4. Rename the copy using the following convention:
 
-## Step 3 — Open Google Colab
+   `ModuleX_Student_FirstName_LastName.ipynb`
 
-Google Colab is a browser-based environment for executing Python notebooks.
+   Example: `Module1_Student_Jane_Doe.ipynb`
 
-You do not need to install Python locally.
+5. Open **your copied file** in VS Code. Complete all work in that copy.
 
-### Option A — Open Directly from GitHub
+If you cannot copy/paste between folders in VS Code, ask your instructor where personal work should be saved. **Do not assume that a shared course folder is your personal workspace.**
 
-Select the **Open in Colab** link provided on the module page.
+## Step 5 — Work with Notebook Cells in VS Code
 
-### Option B — Open Manually
+A `.ipynb` notebook contains:
 
-1. Visit https://colab.research.google.com/
-2. Select the **GitHub** tab.
-3. Enter the URL of this course repository.
-4. Find the notebook for the module you are completing.
-5. Select the notebook to open it.
+- **Markdown cells:** Reading, explanations, task instructions, and questions.
+- **Code cells:** Python demonstrations and activities you can run or edit.
 
-If GitHub import is unavailable, download the `.ipynb` file from GitHub and use **File → Upload notebook** in Colab.
+To run code:
 
----
+1. Open your copied `.ipynb` notebook.
+2. Use **Select Kernel** if VS Code asks you to choose a Python environment; choose the course-provided kernel/environment when available.
+3. Click the **Run Cell** control next to a code cell, or use **Shift+Enter**.
+4. Run prerequisite/setup cells before later exercises.
+5. Read the outputs and answer all assigned questions.
 
-## Step 4 — Save Your Own Copy
+**Do not install or change software or Python environments unless your instructor authorizes it.** The cyber range is intended to be preconfigured.
 
-Before completing any activities, create a personal copy.
+## Step 6 — Complete the Module
 
-In Google Colab:
+Work through the notebook in order. You may be asked to:
 
-1. Select **File**.
-2. Select **Save a copy in Drive**.
-3. Rename the notebook to identify your submission.
-
-Example:
-
-`Module1_Student_YourName.ipynb`
-
-Complete your work in your personal copy, not the original repository notebook.
-
----
-
-## Step 5 — Learn How to Use Notebook Cells
-
-Google Colab notebooks contain two primary types of cells.
-
-### Text Cells
-
-Text cells contain instructions, explanations, questions, and learning materials.
-
-Read these carefully before running the corresponding code.
-
-### Code Cells
-
-Code cells contain Python code.
-
-To run a code cell:
-
-1. Select the cell.
-2. Click the play button next to it.
-3. Wait for execution to finish.
-4. Review the output.
-
-You can also press **Shift + Enter** to execute a selected cell.
-
-Some cells require previous cells to be executed first.
-
----
-
-## Step 6 — Complete Student Activities
-
-Each module includes tasks that may require you to:
-
+- Run demonstrations and inspect outputs.
 - Complete or modify Python code.
-- Execute an experiment.
-- Change selected parameters.
-- Compare experimental outputs.
-- Interpret model performance.
-- Identify security weaknesses.
-- Recommend defensive controls.
-- Answer written questions.
+- Compare model metrics or attack results.
+- Answer written analysis questions in the designated areas or new Markdown cells.
+- Complete an end-of-module lab.
 
-Read each task before beginning.
+Preserve the original questions and task instructions in your working copy.
 
-When a task requests a written response, enter your answer in the designated response area or add a Markdown cell directly beneath the question.
+## Step 7 — Save and Verify
 
-When a task requests code, complete the appropriate code cell.
+1. Save your notebook regularly using **File → Save** or **Ctrl+S** (on Windows/Linux).
+2. Confirm that your changes appear in **your personal `.ipynb` file**.
+3. Verify that required code cells have run and that important outputs are visible or documented.
+4. Check that all written answers and required tasks are complete.
 
-Do not delete the original task instructions.
+**Important:** Your cyber range may have session or storage rules. Use only the personal working location approved by your instructor and follow any backup instructions they provide.
 
----
+## Step 8 — Submit to the Instructor
 
-## Step 7 — Review Your Work
+1. Locate your completed `ModuleX_Student_FirstName_LastName.ipynb` file.
+2. Submit that `.ipynb` file through the instructor-designated submission method.
+3. Keep your personal working copy until grading is complete.
 
-Before submitting a module, confirm that:
+The submission destination and deadlines are provided by the instructor; they are **not** specified by this GitHub repository.
 
-- All required tasks are complete.
-- Your Python code executes successfully.
-- Relevant outputs are visible.
-- Written questions contain complete answers.
-- Experimental results are documented.
-- The final lab is complete.
+**Do not upload completed work to the public student GitHub repository.**
 
-If a notebook produces an error, review the [Troubleshooting Guide](TROUBLESHOOTING.md).
+See [Submission Guidelines](SUBMISSION_GUIDELINES.md).
 
----
+## Step 9 — Continue to the Next Module
 
-## Step 8 — Download Your Completed Notebook
+Return to the course workspace in VS Code, locate the next module, **make a fresh personal copy**, and repeat the process.
 
-Once your assignment is complete:
+[View Course Roadmap](COURSE_ROADMAP.md) | [Return to Course Home](README.md)
 
-1. Select **File** in Google Colab.
-2. Select **Download**.
-3. Select **Download .ipynb**.
-4. Save the notebook to your computer.
+## If You Get Lost
 
-Suggested filename:
+Open the **Getting Started HTML guide on your cyber range desktop** or return to this file. If the course shortcut does not open VS Code, see [Troubleshooting](TROUBLESHOOTING.md) and contact your instructor.
 
-`Module1_Student_YourName.ipynb`
-
----
-
-## Step 9 — Submit Your Assignment
-
-Submit the downloaded notebook using the submission method specified by your instructor.
-
-Do not upload your completed assignments to the public course repository.
-
-See [Submission Guidelines](SUBMISSION_GUIDELINES.md) for additional details.
-
----
-
-## Step 10 — Continue to the Next Module
-
-After completing and submitting a module, return to the course roadmap and proceed to the next module.
-
-[View the Course Roadmap](COURSE_ROADMAP.md)
-
----
-
-## Need Help?
-
-If you encounter an issue:
-
-1. Review the notebook instructions.
-2. Confirm that previous code cells have been executed.
-3. Review the [Troubleshooting Guide](TROUBLESHOOTING.md).
-4. Contact your instructor if the problem continues.
-
-## Begin the Course
-
-[Start Module 1 — Introduction to AI Security](Module_1_Introduction/README.md)
 
